@@ -28,6 +28,7 @@ async function main() {
     console.log("Deploying, please wait...");
     const contract = await ContractFactory.deploy(); //Stop here! Wait fot contract to deploy - reason for using await
     await contract.deployTransaction.wait(1);
+    console.log(`Contract deployed to addess: ${contract.address}`);
     //const transctionReceipt = await contract.deployTransaction.wait(1); //You only get transaction receipt when you wait for block confirmation. Otherwise, you get contract object which has deployed transaction with it
     //   console.log("Here is the deployment transaction (transaction response): ");
     //   console.log(contract.deployTransaction); // Transaction object with deployed transaction
