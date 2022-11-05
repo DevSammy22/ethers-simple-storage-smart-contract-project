@@ -24,8 +24,8 @@
 Clone this repo
 
 ```
-git clone
-cd ethers-simple-storage
+git clone https://github.com/DevSammy22/ethers-simple-storage-smart-contract-project.git
+cd ethers-simple-storage-smart-contract-project
 ```
 
 Then install dependencies
