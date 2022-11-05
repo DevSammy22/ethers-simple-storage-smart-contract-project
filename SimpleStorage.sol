@@ -6,9 +6,6 @@ pragma solidity 0.8.17;
 
 contract SimpleStorage {
     uint256 favoriteNumber;
-    //uint256 is the same as uint
-    //A contract is just like a class in OOP language, like c#
-    //People[] public person = People({favoriteNumber: 2, name: "Sam Ade"});
     mapping(string => uint256) public nameToFavoriteNumber;
 
     struct People {
@@ -16,7 +13,7 @@ contract SimpleStorage {
         string name;
     }
 
-    People[] public people; // This is an empty array of type People
+    People[] public people;
 
     function store(uint256 _favoriteNumber) public virtual {
         favoriteNumber = _favoriteNumber;
